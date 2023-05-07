@@ -1,0 +1,45 @@
+.tab__button {
+  border: none;
+  background-color: inherit;
+  color: $color-dark-blue-opacity;
+  font-family: $font-roboto-condensed;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0;
+  padding-top: 2px;
+  padding-bottom: 11px;
+  position: relative;
+  cursor: pointer;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 13px;
+  }
+
+  @include hover-focus {
+    &:not(.active) {
+      color: $color-light-blue;
+    }
+  }
+}
+
+.tab__button.active {
+  color: $color-dark-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $color-pink;
+    left: 0;
+    bottom: -1.5px;
+  }
+}

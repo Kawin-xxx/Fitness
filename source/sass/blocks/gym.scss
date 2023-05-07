@@ -1,0 +1,252 @@
+.gym {
+  padding: 120px 0 235px;
+  font-family: $font-roboto-condensed;
+  color: $color-dark-blue;
+
+  @include vp-1199 {
+    padding: 64px 0 184px;
+  }
+
+  @include vp-767 {
+    padding: 25px 0 71px;
+  }
+}
+
+.gym__container {
+  display: flex;
+  column-gap: 74px;
+  padding-left: 12%;
+  position: relative;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.gym__text-wrapper {
+  max-width: 365px;
+  padding-top: 38px;
+
+  @include vp-1199 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    padding: 0 15px;
+    padding-top: 38px;
+  }
+}
+
+.gym h2 {
+  margin: 0;
+  font-family: $font-alumni-sans;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.4px;
+  margin-bottom: 8px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 0;
+    margin-left: -18px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+}
+
+.gym span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 38px;
+  display: block;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 31px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
+}
+
+.gym p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:first-of-type {
+    margin-bottom: 9px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    margin-bottom: 50px;
+    padding: 0 10%;
+
+    &:last-of-type {
+      display: none;
+    }
+
+    &:first-of-type {
+      margin-bottom: 45px;
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+    padding: 0;
+
+    &:first-of-type {
+      margin-bottom: 33px;
+
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+.gym__image {
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  left: 39.5%;
+  top: 72%;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+    left: 32.6%;
+    top: 86%;
+  }
+
+  @include vp-767 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.gym__video-image {
+  width: 364px;
+  height: 228px;
+  position: relative;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.gym__video {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video-play {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.gym__video-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("/img/svg/ellipse.svg");
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  @include vp-1199 {
+    scale: 0.73;
+    top: 41%;
+    left: 45%;
+  }
+
+  @include vp-767 {
+    top: 41%;
+    left: 46%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 25%;
+    top: 40%;
+    border: 10px solid transparent;
+    border-left: 20px solid $color-default-white;
+  }
+
+  @include hover-focus {
+    scale: 1.1;
+    top: 52%;
+    left: 52%;
+
+    &::after {
+      border: 15px solid transparent;
+      border-left: 25px solid $color-default-white;
+      right: 17%;
+      top: 35%;
+    }
+  }
+}
