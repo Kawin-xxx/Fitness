@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -44,7 +44,8 @@
 
             <div class="promo__image-wrapper">
               <picture>
-                <source media="(max-width: 1199.9px)" src="img/promo-tablet.jpg" srcset="img/promo-tablet@2x.jpg 2x" width="324" height="390">
+                <source media="(max-width: 1199.9px)" srcset="img/promo-tablet.webp, img/promo-tablet@2x.webp 2x" width="324" height="390">
+                <source type="image/webp" srcset="img/promo-desktop.webp, img/promo-desktop@2x.webp 2x">
                 <img loading="lazy" src="img/promo-desktop.jpg" srcset="img/promo-desktop@2x.jpg 2x" width="500" height="566" alt="Мужчина SUPERGYM.">
               </picture>
             </div>
@@ -68,17 +69,18 @@
             </div>
 
             <picture>
-              <source media="(max-width: 767.9px)" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199.9px)" src="img/gym-tablet.jpg" srcset="img/gym-tablet@2x.jpg 2x">
+              <source media="(max-width: 767.9px)" srcset="img/gym-mobile.webp, img/gym-mobile@2x.webp 2x">
+              <source media="(max-width: 1199.9px)" srcset="img/gym-tablet.webp, img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym-desktop.webp, img/gym-desktop@2x.webp 2x">
               <img class="gym__image" loading="lazy" src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Спортзал.">
             </picture>
-
 
             <div class="gym__video-wrapper">
 
               <picture>
-                <source media="(max-width: 767.9px)" src="img/gym-video-mobile.jpg" srcset="img/gym-video-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199.9px)" src="img/gym-video-tablet.jpg" srcset="img/gym-video-tablet@2x.jpg 2x" width="266" height="167">
+                <source media="(max-width: 767.9px)" srcset="img/gym-video-mobile.webp, img/gym-video-mobile@2x.webp 2x">
+                <source media="(max-width: 1199.9px)" srcset="img/gym-video-tablet.webp, img/gym-video-tablet@2x.webp 2x" width="266" height="167">
+                <source type="image/webp" srcset="img/gym-video-desktop.webp, img/gym-video-desktop@2x.webp 2x">
                 <img class="gym__video-image" loading="lazy" src="img/gym-video-desktop.jpg" srcset="img/gym-video-desktop@2x.jpg 2x" width="364" height="228" alt="Видео.">
               </picture>
 
@@ -101,14 +103,14 @@
               <button class="tab__button" type="button" id="12-month">12 месяцев</button>
             </div>
 
-            <ul class="subscriptions__list" id="1-month">
+            <ul class="subscriptions__list" aria-label="1-month">
               <li class="subscriptions__item" tabindex="0">
                 <h3>С тренером</h3>
                 <h4>12 занятий</h4>
 
                 <span data-shadow="5000">5000</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
 
               <li class="subscriptions__item" tabindex="0">
@@ -117,7 +119,7 @@
 
                 <span data-shadow="1700">1700</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
 
               <li class="subscriptions__item" tabindex="0">
@@ -126,18 +128,18 @@
 
                 <span data-shadow="2700">2700</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
             </ul>
 
-            <ul class="subscriptions__list visually-hidden" id="6-month">
+            <ul class="subscriptions__list visually-hidden" aria-label="6-month">
               <li class="subscriptions__item" tabindex="0">
                 <h3>С тренером</h3>
                 <h4>72 занятия</h4>
 
                 <span data-shadow="25000">25000</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
 
               <li class="subscriptions__item" tabindex="0">
@@ -146,7 +148,7 @@
 
                 <span data-shadow="8400">8400</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
 
               <li class="subscriptions__item" tabindex="0">
@@ -155,18 +157,18 @@
 
                 <span data-shadow="14000">14000</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
             </ul>
 
-            <ul class="subscriptions__list visually-hidden" id="12-month">
+            <ul class="subscriptions__list visually-hidden" aria-label="12-month">
               <li class="subscriptions__item" tabindex="0">
                 <h3>С тренером</h3>
                 <h4>12 занятий</h4>
 
                 <span data-shadow="40000">40000</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
 
               <li class="subscriptions__item" tabindex="0">
@@ -175,7 +177,7 @@
 
                 <span data-shadow="17400">17400</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
 
               <li class="subscriptions__item" tabindex="0">
@@ -184,7 +186,7 @@
 
                 <span data-shadow="25400">25400</span>
 
-                <a class="subscriptions__button" type="button" href="#">купить абонемент</a>
+                <a class="subscriptions__button" href="#">купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -222,8 +224,9 @@
 
             <div class="competitions__image-wrapper">
               <picture>
-                <source media="(max-width: 767.9px)" src="img/competitions-mobile.jpg" srcset="img/competitions-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199.9px)" src="img/competitions-tablet.jpg" srcset="img/competitions-tablet@2x.jpg 2x" width="386" height="292">
+                <source media="(max-width: 767.9px)" srcset="img/competitions-mobile.webp, img/competitions-mobile@2x.webp 2x">
+                <source media="(max-width: 1199.9px)" srcset="img/competitions-tablet.webp, img/competitions-tablet@2x.webp 2x" width="386" height="292">
+                <source type="image/webp" srcset="img/competitions-desktop.webp, img/competitions-desktop@2x.webp 2x">
                 <img class="competitions__image" loading="lazy" src="img/competitions-desktop.jpg" srcset="img/competitions-desktop@2x.jpg 2x" width="660" height="500" alt="Соревнования.">
               </picture>
             </div>
@@ -480,9 +483,9 @@
 
                 <div class="sale__image-wrapper">
                   <picture>
-                    <source media="(max-width: 767.9px)" src="img/stocks-mobile.jpg" srcset="img/stocks-mobile@2x.jpg 2x">
-                    <source media="(max-width: 1199.9px)" src="img/stocks-tablet.jpg" srcset="img/stocks-tablet@2x.jpg 2x" width="399" height="462">
-                    <img class="sale__image" loading="lazy" src="img/stocks-desktop.jpg" srcset="img/stocks-desktop@2x.jpg 2x" width="280" height="462" alt="Спортивная девушка.">
+                    <source media="(max-width: 767.9px)" srcset="img/stocks-mobile.webp, img/stocks-mobile@2x.webp 2x">
+                    <source media="(max-width: 1199.9px)" srcset="img/stocks-tablet.webp, img/stocks-tablet@2x.webp 2x" width="399" height="462">
+                    <img class="sale__image" loading="lazy" src="img/stocks-desktop.webp" srcset="img/stocks-desktop@2x.webp 2x" width="280" height="462" alt="Спортивная девушка.">
                   </picture>
                 </div>
               </div>
