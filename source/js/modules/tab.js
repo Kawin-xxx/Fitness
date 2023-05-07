@@ -6,7 +6,7 @@ let onButtonClick = (event) => {
   const id = event.currentTarget.id;
 
   buttons.forEach((button) => {
-    if (button.getAttribute('aria-label') === id) {
+    if (button.getAttribute('id') === id) {
       button.classList.add('active');
     } else {
       button.classList.remove('active');
