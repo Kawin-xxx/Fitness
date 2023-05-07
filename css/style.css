@@ -2407,7 +2407,7 @@ iframe {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-image: url("/img/svg/ellipse.svg");
+  background-image: url("../img/svg/ellipse.svg");
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -2474,7 +2474,7 @@ iframe {
   right: -2.5%;
   width: 321px;
   height: 421px;
-  background: url("/img/subscriptions-desktop.png");
+  background: url("../img/subscriptions-desktop.png");
   z-index: 2;
 }
 
@@ -2595,7 +2595,7 @@ iframe {
 }
 
 .subscriptions__item span::after {
-  content: url("../../img/svg/rouble.svg");
+  content: url("../img/svg/rouble.svg");
   position: absolute;
   left: 113%;
 }
@@ -4574,7 +4574,7 @@ iframe {
   }
 
   .subscriptions__item span::after {
-    content: url("../../img/svg/rouble-mobile.svg");
+    content: url("../img/svg/rouble-mobile.svg");
   }
 
   .subscriptions__item span::before {
