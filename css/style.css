@@ -2595,7 +2595,7 @@ iframe {
 }
 
 .subscriptions__item span::after {
-  content: url("../img/svg/rouble.svg");
+  content: url("../../img/svg/rouble.svg");
   position: absolute;
   left: 113%;
 }
@@ -4574,7 +4574,7 @@ iframe {
   }
 
   .subscriptions__item span::after {
-    content: url("../img/svg/rouble-mobile.svg");
+    content: url("../../img/svg/rouble-mobile.svg");
   }
 
   .subscriptions__item span::before {
