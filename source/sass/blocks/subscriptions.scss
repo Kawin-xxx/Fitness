@@ -25,7 +25,7 @@
     right: -2.5%;
     width: 321px;
     height: 421px;
-    background: url("/img/subscriptions-desktop.png");
+    background: url("../img/subscriptions-desktop.png");
     z-index: 2;
 
     @include vp-1199 {
@@ -193,12 +193,12 @@
   }
 
   &::after {
-    content: url("/img/svg/rouble.svg");
+    content: url("../img/svg/rouble.svg");
     position: absolute;
     left: 113%;
 
     @include vp-767 {
-      content: url("/img/svg/rouble-mobile.svg");
+      content: url("../img/svg/rouble-mobile.svg");
     }
   }
 
