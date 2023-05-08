@@ -5,7 +5,22 @@
 
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-dark-blue:                   #102654;
+$color-dark-blue-opacity:           rgba($color-dark-blue, 0.5);
+$color-blue:                        #14367a;
+$color-blue-opacity:                rgba($color-blue, 0.5);
+$color-grey:                        #f8f9fc;
+$color-grey-2:                      #b6bdcc;
+$color-grey-additional:             #e8e8e8;
+$color-light-grey:                  rgba(#787878, 0.2);
+$color-dark-grey:                   #afafaf;
+$color-pink:                        #d10a42;
+$color-red:                         #ed0233;
+$color-light-blue:                  #495a7d;
+$color-sky-blue:                    #103aae;
+$persian-blue:                      #2e35ac;
+$resolution-blue:                   #1c3374;
+$cobalt:                            #003eb7;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -25,7 +40,8 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$font-roboto-condensed:             "Roboto Condensed", "Arial", sans-serif;
+$font-alumni-sans:                  "Alumni Sans", "Arial", sans-serif;
 
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
 
@@ -43,13 +59,16 @@ $trans-600:                         0.6s $tf-default;
 // Viewports
 // ---------------------------------
 
-$vp-320:                            320px;
+/*$vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
-$vp-1920:                           1920px;
+$vp-1920:                           1920px;*/
+
+$vp-768:                           768.9px;
+$vp-1200:                           1200.9px;
 
 // Retina
 // ---------------------------------
