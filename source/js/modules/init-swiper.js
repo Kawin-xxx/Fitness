@@ -1,5 +1,5 @@
-const initCoachesSwiper = () => {
-  const coachesSlider = new Swiper('.swiper--coaches', { // eslint-disable-line
+export const initCoachesSwiper = () => {
+  new Swiper('.swiper--coaches', { // eslint-disable-line
     direction: 'horizontal',
     loop: true,
 
@@ -33,10 +33,9 @@ const initCoachesSwiper = () => {
     },
   });
 };
-initCoachesSwiper();
 
-const initFeedbackSwiper = () => {
-  const feedbackSlider = new Swiper('.swiper--feedback', { // eslint-disable-line
+export const initFeedbackSwiper = () => {
+  new Swiper('.swiper--feedback', { // eslint-disable-line
     direction: 'horizontal',
 
     navigation: {
@@ -47,5 +46,3 @@ const initFeedbackSwiper = () => {
     slidesPerView: 1,
   });
 };
-
-initFeedbackSwiper();

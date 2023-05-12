@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initFeedbackSwiper, initCoachesSwiper} from './modules/init-swiper';
 import './modules/tab';
-import './modules/init-swiper';
 import './modules/video';
 
 // ---------------------------------
@@ -13,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initFeedbackSwiper();
+  initCoachesSwiper();
 
   // Modules
   // ---------------------------------
