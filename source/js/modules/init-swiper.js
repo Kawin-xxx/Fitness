@@ -1,4 +1,4 @@
-export const initCoachesSwiper = () => {
+(() => {
   new Swiper('.swiper--coaches', { // eslint-disable-line
     direction: 'horizontal',
     loop: true,
@@ -32,9 +32,9 @@ export const initCoachesSwiper = () => {
       },
     },
   });
-};
+})();
 
-export const initFeedbackSwiper = () => {
+(() => {
   new Swiper('.swiper--feedback', { // eslint-disable-line
     direction: 'horizontal',
 
@@ -45,4 +45,4 @@ export const initFeedbackSwiper = () => {
 
     slidesPerView: 1,
   });
-};
+})();
