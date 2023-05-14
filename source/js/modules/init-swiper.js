@@ -1,5 +1,7 @@
+const Swiper = window.Swiper;
+
 (() =>
-  new Swiper('.swiper--coaches', {// eslint-disable-line
+  new Swiper('.swiper--coaches', {
     direction: 'horizontal',
     loop: true,
 
