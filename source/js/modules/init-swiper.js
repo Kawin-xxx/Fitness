@@ -1,5 +1,5 @@
-(() => {
-  new Swiper('.swiper--coaches', { // eslint-disable-line
+(() =>
+  new Swiper('.swiper--coaches', {// eslint-disable-line
     direction: 'horizontal',
     loop: true,
 
@@ -31,11 +31,11 @@
         slidesPerGroup: 4,
       },
     },
-  });
-})();
+  })
+)();
 
-(() => {
-  new Swiper('.swiper--feedback', { // eslint-disable-line
+(() =>
+  new Swiper('.swiper--feedback', {// eslint-disable-line
     direction: 'horizontal',
 
     navigation: {
@@ -44,5 +44,5 @@
     },
 
     slidesPerView: 1,
-  });
-})();
+  })
+)();
