@@ -42,7 +42,6 @@ let onButtonClick = (event) => {
 
   tabOff();
 };
-
 tabOff();
 
 buttons.forEach((button) => {
