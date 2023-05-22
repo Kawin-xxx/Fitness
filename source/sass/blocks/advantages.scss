@@ -22,6 +22,7 @@
 
   h2 {
     font-family: $font-alumni-sans;
+    color: $color-dark-blue;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
@@ -96,10 +97,12 @@
     background-color: $resolution-blue;
     color: $color-default-white;
     max-width: 240px;
-    height: 307px;
+    min-height: 307px;
+    height: max-content;
     margin-top: 55px;
     margin-left: 55px;
     padding-top: 50px;
+    padding-bottom: 40px;
 
     @include vp-1199 {
       grid-column: 1 / -1;
@@ -110,11 +113,13 @@
       margin: 44px auto 42px;
       padding-top: 33px;
       padding-bottom: 38px;
+      min-height: 239px;
     }
 
     @include vp-767 {
       max-width: none;
       min-width: auto;
+      min-height: 239px;
       width: 100%;
       order: 1;
       margin: 0;
@@ -211,6 +216,7 @@
     line-height: 64px;
     color: transparent;
     background: linear-gradient(142.51deg, $color-pink 0%, #0041ca 87.33%);
+
     background-clip: text;
 
     @include vp-1199 {
@@ -222,6 +228,7 @@
   &--area {
     span {
       background: linear-gradient(127.61deg, $color-pink 0%, #0041ca 87.33%);
+      background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
       background-clip: text;
     }
   }

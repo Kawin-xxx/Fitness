@@ -1,6 +1,19 @@
 const Swiper = window.Swiper;
 
-(() =>
+
+
+let tabOff = () => {
+  let slides = document.querySelectorAll('.swiper-slide')
+  for (let i = 0; i < slides.length; i++) {
+    if (!slides[i].classList.contains('swiper-slide-duplicate')) {
+      slides[i].tabIndex = 0;
+    } else {
+      slides[i].tabIndex = -1;
+    }
+  }
+}
+
+(() =>{
   new Swiper('.swiper--coaches', {
     direction: 'horizontal',
     loop: true,
@@ -34,6 +47,9 @@ const Swiper = window.Swiper;
       },
     },
   })
+  
+  tabOff();
+  }
 )();
 
 (() =>

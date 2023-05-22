@@ -101,6 +101,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  margin-bottom: 189px;
+
+  @include vp-767 {
+    margin-bottom: 31px;
+  }
 }
 
 .sale__button {
@@ -135,6 +140,10 @@
   background-color: $persian-blue;
   flex-shrink: 0;
 
+  @include vp-1199 {
+    display: contents;
+  }
+
   @include vp-767 {
     width: 100%;
     align-self: flex-end;
@@ -143,9 +152,9 @@
 
 .sale__image {
   width: 280px;
+  height: 100%;
 
   @include vp-1199 {
-    min-width: 399px;
     width: 399px;
   }
 
@@ -247,6 +256,7 @@
 
 .sale__item .sale__button {
   font-family: $font-roboto-condensed;
+  color: $resolution-blue;
   width: fit-content;
   margin-top: auto;
   font-weight: 700;

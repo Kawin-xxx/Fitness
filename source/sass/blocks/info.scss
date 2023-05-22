@@ -166,6 +166,7 @@
   text-transform: uppercase;
   padding: 17px;
   cursor: pointer;
+  user-select: none;  
 
   @include vp-1199 {
     width: 472px;

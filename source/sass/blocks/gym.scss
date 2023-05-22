@@ -16,7 +16,6 @@
   display: flex;
   column-gap: 74px;
   padding-left: 12%;
-  position: relative;
 
   @include vp-1199 {
     flex-direction: column;
@@ -119,12 +118,13 @@
 
     &:first-of-type {
       margin-bottom: 33px;
-
-      br {
-        display: block;
-      }
+      padding-right: 30px;
     }
   }
+}
+
+.gym__wrapper {
+  position: relative;
 }
 
 .gym__image {
@@ -139,14 +139,14 @@
 
 .gym__video-wrapper {
   position: absolute;
-  left: 39.5%;
+  left: -9%;
   top: 72%;
 
   @include vp-1199 {
-    width: 266px;
-    height: 167px;
-    left: 32.6%;
-    top: 86%;
+    width: 39.5%;
+    height: 48.7%;
+    left: 30%;
+    top: 75%;
   }
 
   @include vp-767 {
@@ -164,8 +164,8 @@
   position: relative;
 
   @include vp-1199 {
-    width: 266px;
-    height: 167px;
+    width: 100%;
+    height: 100%;
   }
 
   @include vp-767 {
@@ -226,6 +226,10 @@ iframe {
     height: 72px;
     border-radius: 50%;
     background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+
+    @include vp-1199 {
+      left: 48%;
+    }
   }
 
   &::after {
@@ -235,6 +239,20 @@ iframe {
     top: 40%;
     border: 10px solid transparent;
     border-left: 20px solid $color-default-white;
+
+    @include vp-1199 {
+      border: none;
+      content: url("../img/svg/play.svg");
+      top: 43%;
+      left: 27%;
+    }
+
+    @include vp-767 {
+      border: none;
+      content: url("../img/svg/play.svg");
+      top: 43%;
+      left: 28%;
+    }
   }
 
   @include hover-focus {
