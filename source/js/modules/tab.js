@@ -43,6 +43,8 @@ let onButtonClick = (event) => {
   tabOff();
 };
 
+tabOff();
+
 buttons.forEach((button) => {
   button.addEventListener('click', onButtonClick);
 });
