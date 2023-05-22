@@ -1,12 +1,13 @@
 .competitions {
-  padding: 0 0 106px;
+  padding: 120px 0 106px;
+  position: relative;
 
   @include vp-1199 {
-    padding: 0 0 101px;
+    padding: 100px 0 101px;
   }
 
   @include vp-767 {
-    padding: 0 0 64px;
+    padding: 70px 0 64px;
   }
 }
 
@@ -180,7 +181,8 @@
   letter-spacing: 0.7px;
   color: $color-default-white;
   border: 4px solid $color-default-white;
-
+  user-select: none;  
+  
   @include vp-1199 {
     border: 2px solid $color-default-white;
     min-height: 39px;
@@ -203,4 +205,8 @@
 .competitions__image {
   object-fit: cover;
   height: 100%;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }

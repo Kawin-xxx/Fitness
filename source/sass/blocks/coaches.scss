@@ -4,7 +4,8 @@
   margin: 0 auto;
 
   @include vp-1199 {
-    max-width: 858px;
+    //max-width: 858px;
+    max-width: 100%;
   }
 
   h2 {
@@ -240,6 +241,11 @@
   display: block;
   background-color: transparent;
   margin: 0;
+
+  @include vp-767 {
+    margin-left: -3px;
+    margin-top: -9px;
+  }
 
   &::after {
     display: none;

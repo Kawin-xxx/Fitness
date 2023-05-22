@@ -17,38 +17,35 @@
 
   <body>
     <div class="wrapper">
+
       <header class="page-header">
-        <div class="page-header__container container">
-          <a class="page-header__logo" href="index.html">
-            <picture>
-              <img loading="lazy" src="img/svg/logo.svg" width="122" height="44" alt="Логотип SUPERGYM.">
-            </picture>
-          </a>
-
-          <a href="tel:+88005555555">8-800-555-55-55</a>
-        </div>
-      </header>
-      <main>
-        <h1 class="visually-hidden">SUPERGYM.</h1>
-
-        <section class="promo">
-          <div class="promo__container container">
-            <div class="promo__text-wrapper">
-              <span>Омск</span>
-
-              <div class="promo__wrapper">
-                <ul class="promo__list">
-                  <li>Тренажёрный зал</li>
-                  <li>Групповые занятия</li>
-                  <li>Кардио-зона</li>
-                </ul>
-                <h2>Фитнес<br>центр</h2>
-              </div>
-
-              <a class="promo__button" href="#subscriptions">Купить абонемент</a>
+        <div class="page-header__container">
+          <nav class="page-header__nav nav">
+            <a class="nav__logo logo" href="#!">
+              <svg class="nav__logo-icon" aria-hidden="true" focusable="false" width="122" height="44">
+                <use href="./img/sprite.svg#logo"/>
+              </svg>
+            </a>
+            <a class="nav__phone" href="tel:88002000000">8-800-555-55-55</a>
+          </nav>
+          <div class="page-header__content">
+            <div class="page-header__description">
+              <h1>Фитнес<br>центр</h1>
+              <h2>Омск</h2>
+              <ul class="page-header__list">
+                <li class="page-header__list-item">
+                  Тренажёрный зал
+                </li>
+                <li class="page-header__list-item">
+                  Групповые занятия
+                </li>
+                <li class="page-header__list-item">
+                  Кардио-зона
+                </li>
+              </ul>
+              <a class="page-header__button" href="#catalog">Купить абонемент</a>
             </div>
-
-            <div class="promo__image-wrapper">
+            <div class="page-header__image">
               <picture>
                 <source media="(max-width: 1199.9px)" srcset="img/promo-tablet.webp, img/promo-tablet@2x.webp 2x" width="324" height="390">
                 <source type="image/webp" srcset="img/promo-desktop.webp, img/promo-desktop@2x.webp 2x">
@@ -56,7 +53,11 @@
               </picture>
             </div>
           </div>
-        </section>
+        </div>
+      </header>
+
+      <main>
+        <h1 class="visually-hidden">SUPERGYM.</h1>
 
         <section class="gym">
           <div class="container gym__container">
@@ -64,8 +65,9 @@
               <h2>Тренажерный зал</h2>
               <span>Просторный зал площадью 900&nbsp;кв/м</span>
               <p>
-                Supergym&nbsp;– самый большой фитнес<br> центр за&nbsp;Уралом и&nbsp;идеальное место<br> для укрепления тела и&nbsp;здоровья.
-                Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+                Supergym&nbsp;&#8211; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+                тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+                спортсменов.
               </p>
 
               <p>
@@ -74,27 +76,29 @@
               </p>
             </div>
 
-            <picture>
-              <source media="(max-width: 767.9px)" srcset="img/gym-mobile.webp, img/gym-mobile@2x.webp 2x">
-              <source media="(max-width: 1199.9px)" srcset="img/gym-tablet.webp, img/gym-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/gym-desktop.webp, img/gym-desktop@2x.webp 2x">
-              <img class="gym__image" loading="lazy" src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Спортзал.">
-            </picture>
-
-            <div class="gym__video-wrapper">
-
+            <div class="gym__wrapper">
               <picture>
-                <source media="(max-width: 767.9px)" srcset="img/gym-video-mobile.webp, img/gym-video-mobile@2x.webp 2x">
-                <source media="(max-width: 1199.9px)" srcset="img/gym-video-tablet.webp, img/gym-video-tablet@2x.webp 2x" width="266" height="167">
-                <source type="image/webp" srcset="img/gym-video-desktop.webp, img/gym-video-desktop@2x.webp 2x">
-                <img class="gym__video-image" loading="lazy" src="img/gym-video-desktop.jpg" srcset="img/gym-video-desktop@2x.jpg 2x" width="364" height="228" alt="Видео.">
+                <source media="(max-width: 767.9px)" srcset="img/gym-mobile.webp, img/gym-mobile@2x.webp 2x">
+                <source media="(max-width: 1199.9px)" srcset="img/gym-tablet.webp, img/gym-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/gym-desktop.webp, img/gym-desktop@2x.webp 2x">
+                <img class="gym__image" loading="lazy" src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Спортзал.">
               </picture>
-
-              <div class="gym__video" data-video-container
-                data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+  
+              <div class="gym__video-wrapper">
+  
+                <picture>
+                  <source media="(max-width: 767.9px)" srcset="img/gym-video-mobile.webp, img/gym-video-mobile@2x.webp 2x">
+                  <source media="(max-width: 1199.9px)" srcset="img/gym-video-tablet.webp, img/gym-video-tablet@2x.webp 2x" width="266" height="167">
+                  <source type="image/webp" srcset="img/gym-video-desktop.webp, img/gym-video-desktop@2x.webp 2x">
+                  <img class="gym__video-image" loading="lazy" src="img/gym-video-desktop.jpg" srcset="img/gym-video-desktop@2x.jpg 2x" width="364" height="228" alt="Видео.">
+                </picture>
+  
+                <div class="gym__video" data-video-container
+                  data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+                </div>
+  
+                <button class="gym__video-button" type="button"></button>
               </div>
-
-              <button class="gym__video-button" type="button"></button>
             </div>
           </div>
         </section>
@@ -490,7 +494,7 @@
                 <div class="sale__image-wrapper">
                   <picture>
                     <source media="(max-width: 767.9px)" srcset="img/stocks-mobile.webp, img/stocks-mobile@2x.webp 2x">
-                    <source media="(max-width: 1199.9px)" srcset="img/stocks-tablet.webp, img/stocks-tablet@2x.webp 2x" width="399" height="462">
+                    <source media="(max-width: 1199.9px)" srcset="img/stocks-tablet.webp, img/stocks-tablet@2x.webp 2x" width="399">
                     <img class="sale__image" loading="lazy" src="img/stocks-desktop.webp" srcset="img/stocks-desktop@2x.webp 2x" width="280" height="462" alt="Спортивная девушка.">
                   </picture>
                 </div>
@@ -532,6 +536,8 @@
                         <source media="(max-width: 767px)" srcset="./img/feedback-mobile.png 1x, ./img/feedback-mobile@2x.png 2x">
                         <img src="./img/feedback.png" loading="lazy" srcset="./img/feedback@2x.png 2x" width="80" height="80" alt="Автор отзыва.">
                       </picture>
+
+                      <h3>Анна Орлова</h3>
                     </div>
                     <div class="feedback__description">
                       <h3>Анна Орлова</h3>
@@ -590,11 +596,11 @@
                 <h2>Бесплатное занятие </h2>
                 <div class="info__form-inputs-wrapper">
                   <label aria-label="Введите имя." data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению!" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                    <input type="text" name="name" id="name" placeholder="Имя" required autocomplete="off">
                   </label>
 
                   <label aria-label="Введите телефон." data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению!" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required autocomplete="off">
                   </label>
                 </div>
 
