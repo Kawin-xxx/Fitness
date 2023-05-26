@@ -34,6 +34,7 @@
       grid-column: 3 / 4;
       grid-row: auto;
       place-self: start end;
+      min-height: 52px;
   
       &:focus-visible,
       &:focus,
@@ -47,6 +48,7 @@
       }
   
       @include vp-1199 {
+        min-height: auto;
         font-size: 24px;
         line-height: 29px;
         font-weight: 700;

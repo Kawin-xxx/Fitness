@@ -7,8 +7,8 @@
 .advantages__container {
   max-width: 1130px;
   margin: 0 auto;
-  padding: 147px 45px 35px;
-  padding-bottom: 84px;
+  padding: 96px 45px 35px;
+  padding-bottom: 134px;
 
   @include vp-1199 {
     padding-top: 91px;
@@ -294,6 +294,7 @@
     line-height: 33px;
     margin: 0;
     margin-bottom: 6px;
+    color: $color-dark-blue;
 
     @include vp-1199 {
       font-size: 20px;
@@ -307,6 +308,7 @@
     font-size: 16px;
     line-height: 22px;
     margin: 0;
+    color: $color-dark-blue;
 
     @include vp-1199 {
       font-size: 16px;
@@ -316,6 +318,7 @@
 
   &--accent {
     p {
+      color: $color-default-white;
       padding: 0 10px;
       font-weight: 400;
       font-size: 16px;
