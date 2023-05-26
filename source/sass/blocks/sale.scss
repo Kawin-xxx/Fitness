@@ -1,5 +1,5 @@
 .sale {
-  padding: 150px 0 60px;
+  padding: 100px 0 60px;
 
   @include vp-1199 {
     padding: 95px 0 60px;
@@ -101,7 +101,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 189px;
+  margin-bottom: 50px;
 
   @include vp-767 {
     margin-bottom: 31px;
@@ -113,8 +113,11 @@
   border-bottom: 1px solid;
   font-weight: 700;
   text-transform: uppercase;
-  width: fit-content;
   margin-top: auto;
+  width: min-content;
+  max-width: 200px;
+  word-wrap: break-word;
+  user-select: none;
 }
 
 .sale__cost .sale__button {
@@ -122,6 +125,7 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  user-select: none;
 
   @include vp-767 {
     text-align: center;
@@ -263,6 +267,10 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
+  width: min-content;
+  max-width: 100%;
+  word-wrap: break-word;
+  user-select: none;
 
   @include vp-767 {
     margin-left: auto;

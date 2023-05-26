@@ -1,9 +1,8 @@
 const Swiper = window.Swiper;
 
-
-
 let tabOff = () => {
-  let slides = document.querySelectorAll('.swiper-slide')
+  //let slides = document.querySelectorAll('.swiper-slide');
+  let slides = document.querySelectorAll('.swiper-slide:not(.feedback__item)');
   for (let i = 0; i < slides.length; i++) {
     if (!slides[i].classList.contains('swiper-slide-duplicate')) {
       slides[i].tabIndex = 0;
@@ -40,7 +39,7 @@ let tabOff = () => {
         slidesPerView: 3,
         slidesPerGroup: 1,
       },
-      // when window width is >= 1200px
+      // when window width is >= 1280px
       1280: {
         slidesPerView: 4,
         slidesPerGroup: 4,

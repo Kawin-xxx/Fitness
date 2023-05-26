@@ -4,11 +4,11 @@
   margin: 0 auto;
 
   @include vp-1199 {
-    //max-width: 858px;
     max-width: 100%;
   }
 
   h2 {
+    color: $color-dark-blue;
     margin: 0;
     margin-bottom: 48px;
     padding-left: 69px;
@@ -37,7 +37,7 @@
 
 .coaches__content {
   display: flex;
-  padding: 0 10px 88px;
+  padding: 0 10px 138px;
 
   @include vp-1199 {
     padding: 0 45px 100px;
